@@ -6,12 +6,15 @@
 //
 
 import Foundation
-class AddTruckViewModel: ObservableObject {
+class ListTruckViewModel: ObservableObject {
   @Published var modelItemTruck = AddTruck()
   @Published var list: [ItemListTruck] = []
   @Published var arrayDevice: [String] = ["aa1111bb","aa2222bb","aa3333bb","aa4444bb","aa5555bb","aa6666bb","aa7777bb"]
   @Published var selectorNameDevice = 0
   @Published var nameDevice = ""
+  var inputDisabled: Bool {
+    arrayDevice.count == 0 || modelItemTruck.numberPhoneDriver.isEmpty
+  }
   func addItemList(item: ItemListTruck){
     list.append(item)
   }
@@ -25,4 +28,5 @@ class AddTruckViewModel: ObservableObject {
   func getNameDevice() -> String{
     return arrayDevice[selectorNameDevice]
   }
+  
 }

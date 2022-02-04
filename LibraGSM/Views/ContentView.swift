@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
   @EnvironmentObject private var authentication: Authentication
   @State private var selectedTab = ConstantValue.truck
-  @StateObject private var addTuckViewModel = AddTruckViewModel()
+  @StateObject private var addTuckViewModel = ListTruckViewModel()
   @State private var presedMapButton: Bool = false
     var body: some View {
         ZStack(alignment: .bottom, content: {

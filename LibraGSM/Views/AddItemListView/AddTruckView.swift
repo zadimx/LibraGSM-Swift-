@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddTruckView: View {
 //  @StateObject private var inputVM = AddTruckViewModel()
-  @EnvironmentObject private var objectVM: AddTruckViewModel
+  @EnvironmentObject private var objectVM: ListTruckViewModel
   
   
     var body: some View {
@@ -43,7 +43,7 @@ struct AddTruckView: View {
             .textCase(.uppercase)
         })
           .background(Image("button"))
-        
+          .disabled(objectVM.inputDisabled)
           Spacer()
       }
       .padding(.horizontal)

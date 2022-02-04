@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ListTruckView: View {
-  @EnvironmentObject private var objectVM: AddTruckViewModel
+  @EnvironmentObject private var objectVM: ListTruckViewModel
   @EnvironmentObject var authentication: Authentication
   
     var body: some View {

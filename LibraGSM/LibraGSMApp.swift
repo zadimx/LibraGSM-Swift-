@@ -13,14 +13,14 @@ struct LibraGSMApp: App {
     var body: some Scene {
       
       WindowGroup {
-        ContentView()
-//        if authentication.isValidated{
-//          ContentView()
-//            .environmentObject(authentication)
-//        } else {
-//          InputView()
-//            .environmentObject(authentication)
-//        }
+//        ContentView()
+        if authentication.isValidated{
+          ContentView()
+            .environmentObject(authentication)
+        } else {
+          InputView()
+            .environmentObject(authentication)
+        }
       }
     }
 }

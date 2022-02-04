@@ -27,7 +27,7 @@
 		1DA0AA9F279EE3FD00486851 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA0AA9E279EE3FD00486851 /* TabBar.swift */; };
 		1DA0AAA7279EFF0400486851 /* TabCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA0AAA6279EFF0400486851 /* TabCurve.swift */; };
 		1DA0AAAC279F130700486851 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA0AAAB279F130700486851 /* ThirdView.swift */; };
-		1DAE94AD27A83FA700CA173A /* AddTruckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE94AC27A83FA700CA173A /* AddTruckViewModel.swift */; };
+		1DAE94AD27A83FA700CA173A /* ListTruckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE94AC27A83FA700CA173A /* ListTruckViewModel.swift */; };
 		1DAE94B527A8406700CA173A /* AddTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE94B427A8406700CA173A /* AddTrucks.swift */; };
 		1DC9F99227A2D18B001E767F /* ItemListTrucksViewRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC9F99127A2D18B001E767F /* ItemListTrucksViewRaw.swift */; };
 		1DEDCCE827A19430009F3D38 /* ConstantValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDCCE727A19430009F3D38 /* ConstantValue.swift */; };
@@ -77,7 +77,7 @@
 		1DA0AA9E279EE3FD00486851 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		1DA0AAA6279EFF0400486851 /* TabCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCurve.swift; sourceTree = "<group>"; };
 		1DA0AAAB279F130700486851 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
-		1DAE94AC27A83FA700CA173A /* AddTruckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTruckViewModel.swift; sourceTree = "<group>"; };
+		1DAE94AC27A83FA700CA173A /* ListTruckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTruckViewModel.swift; sourceTree = "<group>"; };
 		1DAE94B427A8406700CA173A /* AddTrucks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrucks.swift; sourceTree = "<group>"; };
 		1DC9F99127A2D18B001E767F /* ItemListTrucksViewRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTrucksViewRaw.swift; sourceTree = "<group>"; };
 		1DEDCCE727A19430009F3D38 /* ConstantValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantValue.swift; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				1D8342A42796FC1D005DBDDA /* InputViewModel.swift */,
-				1DAE94AC27A83FA700CA173A /* AddTruckViewModel.swift */,
+				1DAE94AC27A83FA700CA173A /* ListTruckViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -386,7 +386,7 @@
 				1DA0AA91279B088800486851 /* SecondView.swift in Sources */,
 				1D8342CF2797112B005DBDDA /* Authentication.swift in Sources */,
 				1DA0AA99279B0A2400486851 /* ListTruckView.swift in Sources */,
-				1DAE94AD27A83FA700CA173A /* AddTruckViewModel.swift in Sources */,
+				1DAE94AD27A83FA700CA173A /* ListTruckViewModel.swift in Sources */,
 				1D8342BF27970156005DBDDA /* UIApplication+Extension.swift in Sources */,
 				1DAE94B527A8406700CA173A /* AddTrucks.swift in Sources */,
 			);

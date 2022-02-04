@@ -15,10 +15,12 @@ struct ItemListTrucksViewRaw: View {
   @State private var imageCall: String = "phone.circle"
     var body: some View {
       VStack{
-      HStack{
+      HStack(){
         Text(itemListTruck.nameTruck)
+          .padding(.leading)
         Spacer()
         Text(itemListTruck.nameDriver)
+          .padding(.trailing)
       }
       .background(Color.yellow)
       HStack{
@@ -53,6 +55,8 @@ struct ItemListTrucksViewRaw: View {
       }
       .background(Color.gray)
     }
+      .cornerRadius(20)
+      
 }
 }
 

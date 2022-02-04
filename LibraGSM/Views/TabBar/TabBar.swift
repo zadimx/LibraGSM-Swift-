@@ -44,11 +44,11 @@ struct TabBar: View {
     } else {
       switch selectedTab {
         case ConstantValue.truck:
-          return tabPointsX[0]
+          return tabPointsX[2]
         case ConstantValue.add:
           return tabPointsX[1]
         default:
-          return tabPointsX[2]
+          return tabPointsX[0]
       }
     }
   }
