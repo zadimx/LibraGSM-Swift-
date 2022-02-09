@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="19H1030" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ItemTruck" representedClassName="ItemTruck" syncable="YES" codeGenerationType="class">
+        <attribute name="axisLeftBottomWheel" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="axisLeftTopWheel" optional="YES" attributeType="Decimal" defaultValueString="0"/>
+        <attribute name="axisRightBottomWheel" optional="YES" attributeType="Decimal" defaultValueString="0"/>
+        <attribute name="axisRightTopWheel" optional="YES" attributeType="Decimal" defaultValueString="0"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nameDevice" optional="YES" attributeType="String"/>
+        <attribute name="nameDriver" optional="YES" attributeType="String"/>
+        <attribute name="nameTruck" optional="YES" attributeType="String"/>
+        <attribute name="numberPhone" optional="YES" attributeType="Decimal" defaultValueString="0"/>
+    </entity>
+    <elements>
+        <element name="ItemTruck" positionX="-63" positionY="-18" width="128" height="178"/>
+    </elements>
+</model>

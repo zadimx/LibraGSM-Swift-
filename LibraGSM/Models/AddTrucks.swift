@@ -5,6 +5,8 @@
 //  Created by Zinovatny Maksym on 31.01.2022.
 //
 
+
+
 import Foundation
 struct AddTruck: Codable {
   var nameDevice: String = ""

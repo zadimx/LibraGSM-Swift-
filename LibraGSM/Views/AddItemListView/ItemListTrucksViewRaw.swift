@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ItemListTrucksViewRaw: View {
-  var itemListTruck: ItemListTruck
+  var itemListTruck: ItemTruck
+//  var itemListTruck: ItemListTruck
   @State private var presedMapButton: Bool = false
   @State private var presedCallButton: Bool = false
   @State private var imageMap: String = "map"
@@ -16,10 +17,10 @@ struct ItemListTrucksViewRaw: View {
     var body: some View {
       VStack{
       HStack(){
-        Text(itemListTruck.nameTruck)
+        Text(itemListTruck.nameTruck ?? "error")
           .padding(.leading)
         Spacer()
-        Text(itemListTruck.nameDriver)
+        Text(itemListTruck.nameDriver ?? "error")
           .padding(.trailing)
       }
       .background(Color.yellow)
@@ -35,12 +36,12 @@ struct ItemListTrucksViewRaw: View {
         Spacer()
         VStack{
           HStack(spacing:50){
-            Text("\(itemListTruck.axisLeftTopWheel) kg")
-            Text("\(itemListTruck.axisRightTopWheel) kg")
+            Text("\(itemListTruck.axisLeftTopWheel ?? 0) kg")
+            Text("\(itemListTruck.axisRightTopWheel ?? 0) kg")
           }
           HStack(spacing:50){
-            Text("\(itemListTruck.axisLeftBottomWheel) kg")
-            Text("\(itemListTruck.axisRightBottomWheel) kg")
+            Text("\(itemListTruck.axisLeftBottomWheel ?? 0) kg")
+            Text("\(itemListTruck.axisRightBottomWheel ?? 0) kg")
           }
         }
         Spacer()
@@ -60,17 +61,17 @@ struct ItemListTrucksViewRaw: View {
 }
 }
 
-struct ItemListTruck: Hashable {
-  var id = UUID()
-  var numberPhone: Int
-  var nameDevice: String
-  var nameTruck: String
-  var nameDriver: String
-  var axisLeftTopWheel: Int
-  var axisRightTopWheel: Int
-  var axisLeftBottomWheel: Int
-  var axisRightBottomWheel: Int
-}
+//struct ItemListTruck: Hashable {
+//  var id = UUID()
+//  var numberPhone: Int
+//  var nameDevice: String
+//  var nameTruck: String
+//  var nameDriver: String
+//  var axisLeftTopWheel: Int
+//  var axisRightTopWheel: Int
+//  var axisLeftBottomWheel: Int
+//  var axisRightBottomWheel: Int
+//}
 
 struct ItemListTrucksView_Previews: PreviewProvider {
   

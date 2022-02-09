@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct LibraGSMApp: App {
   @StateObject var authentication = Authentication()
+  @StateObject private var dataController = DataController()
     var body: some Scene {
       
       WindowGroup {
@@ -17,6 +18,7 @@ struct LibraGSMApp: App {
         if authentication.isValidated{
           ContentView()
             .environmentObject(authentication)
+            .environment(\.managedObjectContext, dataController.conteiner.viewContext)
         } else {
           InputView()
             .environmentObject(authentication)
